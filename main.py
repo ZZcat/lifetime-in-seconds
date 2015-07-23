@@ -1,7 +1,8 @@
 #! /usr/bin/python
 import datetime , time
 #Made by Zach
-while 1:
+q = 1
+while q == 1:
    try:
       print "What is your birthdate?"
       year = input ("Birth-day year (example 2013): ")
@@ -16,3 +17,14 @@ while 1:
           a = (ctime-bday).total_seconds()
           print "                      "*9999
           print "You are ",a," seconds old"
+          print "Hit enter to update and type q to quit"
+          q = raw_input()
+          if q == "q":
+             print "Stoping..."
+             break 
+             
+              
+          
+   except:
+      pass 
+print "Done"
